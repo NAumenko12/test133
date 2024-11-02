@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8eaed46e5ad74900901e17216dbbf3c9" Name="Diagram1">
+        <EntityTypeShape EntityType="Var3Model.sysdiagrams" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Var3Model.Заказ" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Var3Model.Избранные_товары" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Var3Model.Категории" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Var3Model.Клиент" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Var3Model.Состав_заказа" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Var3Model.Товар" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <AssociationConnector Association="Var3Model.FK__Заказ__Клиент__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="Var3Model.FK__Состав_за__Заказ__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="Var3Model.FK__Избранные__Клиен__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="Var3Model.FK__Избранные__Товар__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="Var3Model.FK__Товар__Категория__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="Var3Model.FK__Состав_за__Товар__4CA06362" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

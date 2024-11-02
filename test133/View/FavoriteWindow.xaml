@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="test133.View.FavoriteWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:test133.View" xmlns:viewmodel="clr-namespace:test133.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:FavoriteViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FF898489">
+        <Border Margin="20" CornerRadius="10" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="600" MinHeight="300" Background="#FFFFFF" BorderThickness="2">
+            <StackPanel VerticalAlignment="Center">
+
+                <Label FontSize="24" Content="Избранные товары" FontWeight="Bold" Foreground="#1E1E1E" />
+
+                <ListView ItemsSource="{Binding Favorites}" Margin="10">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn DisplayMemberBinding="{Binding Артикул}" Header="Артикул" Width="80"/>
+                            <GridViewColumn DisplayMemberBinding="{Binding Название}" Header="Название" Width="120"/>
+                            <GridViewColumn DisplayMemberBinding="{Binding Бренд}" Header="Бренд" Width="80"/>
+                            <GridViewColumn DisplayMemberBinding="{Binding Колличество_за_ед}" Header="Кол-во за ед." Width="80"/>
+                            <GridViewColumn DisplayMemberBinding="{Binding Единица}" Header="Единица" Width="80"/>
+                            <GridViewColumn DisplayMemberBinding="{Binding Стоимость}" Header="Стоимость" Width="80"/>
+                            <GridViewColumn DisplayMemberBinding="{Binding Категории.Название}" Header="Категория" Width="80"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+                <Button FontWeight="Bold" Command="{Binding NavigateToShopCommand}" Content="Назад" Margin="10" MinHeight="35" MaxWidth="200" BorderThickness="0" Background="RosyBrown" Foreground="#FFFFFF" Width="457" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>
